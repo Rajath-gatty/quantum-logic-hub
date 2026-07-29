@@ -81,13 +81,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Nimbari — Cloud & AI Consulting for Enterprise" },
+      { title: "Cloud & AI Consulting for Enterprise" },
       {
         name: "description",
         content:
-          "Nimbari architects cloud infrastructure and production AI systems for enterprise teams.",
+          "We architect cloud infrastructure and production AI systems for enterprise teams.",
       },
-      { property: "og:site_name", content: "Nimbari" },
+      { property: "og:site_name", content: "Cloud & AI Consulting" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -107,10 +107,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          name: "Nimbari",
+          name: "Cloud & AI Consulting",
           description:
             "Cloud architecture, AI/ML integration, MLOps and cloud security consulting for enterprises.",
-          email: "hello@nimbari.io",
+          email: "hello@example.com",
           areaServed: "Global",
           serviceType: [
             "Cloud Architecture & Migration",

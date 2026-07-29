@@ -11,13 +11,13 @@ import {
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Nimbari — Cloud & AI Consulting for Enterprise Growth" },
+      { title: "Cloud & AI Consulting for Enterprise Growth" },
       {
         name: "description",
         content:
-          "Nimbari architects intelligent cloud solutions: migration, LLM deployment, MLOps pipelines and cloud security for enterprise teams.",
+          "We architect intelligent cloud solutions: migration, LLM deployment, MLOps pipelines and cloud security for enterprise teams.",
       },
-      { property: "og:title", content: "Nimbari — Cloud & AI Consulting for Enterprise Growth" },
+      { property: "og:title", content: "Cloud & AI Consulting for Enterprise Growth" },
       {
         property: "og:description",
         content:
@@ -228,7 +228,7 @@ function Home() {
           <SectionHead
             eyebrow="About"
             title="A small team of principal architects"
-            body="Nimbari was founded by cloud and machine-learning engineers who spent a decade inside platform teams at scale. We stay deliberately small, work directly with your engineers, and hand over everything we build."
+            body="We are cloud and machine-learning engineers who spent a decade inside platform teams at scale. We stay deliberately small, work directly with your engineers, and hand over everything we build."
           />
           <div className="grid gap-5 sm:grid-cols-2">
             {[
