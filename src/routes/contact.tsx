@@ -149,8 +149,8 @@ function Contact() {
             <ul className="mt-4 space-y-4 text-sm text-muted-foreground">
               <li className="flex gap-3">
                 <Mail className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
-                <a href="mailto:hello@example.com" className="hover:text-foreground">
-                  hello@example.com
+                <a href="mailto:support@rajathgatty.in" className="hover:text-foreground">
+                  support@rajathgatty.in
                 </a>
               </li>
               <li className="flex gap-3">

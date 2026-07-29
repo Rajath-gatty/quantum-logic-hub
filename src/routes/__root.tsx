@@ -110,7 +110,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           name: "Cloud & AI Consulting",
           description:
             "Cloud architecture, AI/ML integration, MLOps and cloud security consulting for enterprises.",
-          email: "hello@example.com",
+          email: "support@rajathgatty.in",
           areaServed: "Global",
           serviceType: [
             "Cloud Architecture & Migration",

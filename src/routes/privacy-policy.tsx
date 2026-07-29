@@ -139,8 +139,8 @@ function PrivacyPolicy() {
           <Block id="requests" title="Privacy requests">
             <p>
               For deletion, access or any compliance enquiry, email{" "}
-              <a href="mailto:privacy@example.com" className="font-medium text-primary hover:underline">
-                privacy@example.com
+              <a href="mailto:support@rajathgatty.in" className="font-medium text-primary hover:underline">
+                support@rajathgatty.in
               </a>
               . Please include enough detail for us to verify your identity and locate your data.
             </p>
