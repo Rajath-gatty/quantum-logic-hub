@@ -4,13 +4,13 @@ import { openCookiePreferences } from "@/components/cookie-consent";
 export const Route = createFileRoute("/privacy-policy")({
   head: () => ({
     meta: [
-      { title: "Privacy Policy — Nimbari Cloud & AI Consulting" },
+      { title: "Privacy Policy — Cloud & AI Consulting" },
       {
         name: "description",
         content:
-          "How Nimbari collects, stores and protects data, including our guarantee that client data is never used to train public AI models.",
+          "How we collect, store and protect data, including our guarantee that client data is never used to train public AI models.",
       },
-      { property: "og:title", content: "Privacy Policy — Nimbari" },
+      { property: "og:title", content: "Privacy Policy" },
       {
         property: "og:description",
         content: "Data collection, AI data handling, retention, security and GDPR/CCPA rights.",
@@ -139,8 +139,8 @@ function PrivacyPolicy() {
           <Block id="requests" title="Privacy requests">
             <p>
               For deletion, access or any compliance enquiry, email{" "}
-              <a href="mailto:privacy@nimbari.io" className="font-medium text-primary hover:underline">
-                privacy@nimbari.io
+              <a href="mailto:privacy@example.com" className="font-medium text-primary hover:underline">
+                privacy@example.com
               </a>
               . Please include enough detail for us to verify your identity and locate your data.
             </p>

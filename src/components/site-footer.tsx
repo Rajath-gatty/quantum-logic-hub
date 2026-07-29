@@ -6,7 +6,7 @@ export function SiteFooter({ onManageCookies }: { onManageCookies?: () => void }
     <footer className="border-t border-border bg-ink text-ink-foreground">
       <div className="mx-auto grid max-w-7xl gap-10 px-5 py-14 sm:grid-cols-2 lg:grid-cols-4 lg:px-8">
         <div className="space-y-3">
-          <p className="text-lg font-extrabold tracking-tight">Nimbari</p>
+          <p className="text-lg font-extrabold tracking-tight">Cloud & AI Consulting</p>
           <p className="max-w-xs text-sm text-ink-foreground/65">
             Cloud architecture and applied AI consultancy for enterprise teams shipping production
             intelligence.
@@ -89,12 +89,12 @@ export function SiteFooter({ onManageCookies }: { onManageCookies?: () => void }
               X
             </a>
           </div>
-          <p className="text-sm text-ink-foreground/65">hello@nimbari.io</p>
+          <p className="text-sm text-ink-foreground/65">hello@example.com</p>
         </div>
       </div>
 
       <div className="border-t border-ink-foreground/10 px-5 py-5 text-center text-xs text-ink-foreground/50 lg:px-8">
-        © 2026 Nimbari. All rights reserved.
+        © 2026. All rights reserved.
       </div>
     </footer>
   );

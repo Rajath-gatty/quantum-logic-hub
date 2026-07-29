@@ -7,13 +7,13 @@ import { z } from "zod";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Nimbari — Book a Cloud & AI Discovery Call" },
+      { title: "Contact — Book a Cloud & AI Discovery Call" },
       {
         name: "description",
         content:
           "Tell us about your cloud migration, LLM or MLOps project. We reply to every enquiry within 24 hours.",
       },
-      { property: "og:title", content: "Contact Nimbari — Book a Discovery Call" },
+      { property: "og:title", content: "Contact — Book a Discovery Call" },
       {
         property: "og:description",
         content: "Share your project details or book time directly with a principal architect.",
@@ -149,8 +149,8 @@ function Contact() {
             <ul className="mt-4 space-y-4 text-sm text-muted-foreground">
               <li className="flex gap-3">
                 <Mail className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
-                <a href="mailto:hello@nimbari.io" className="hover:text-foreground">
-                  hello@nimbari.io
+                <a href="mailto:hello@example.com" className="hover:text-foreground">
+                  hello@example.com
                 </a>
               </li>
               <li className="flex gap-3">

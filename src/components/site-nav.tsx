@@ -51,7 +51,7 @@ export function SiteNav() {
       }`}
     >
       <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-3.5 lg:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] lg:px-8">
-        <Link to="/" className="flex min-w-0 items-center gap-2.5" aria-label="Nimbari home">
+        <Link to="/" className="flex min-w-0 items-center gap-2.5" aria-label="Home">
           <span className="grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-primary">
             <svg viewBox="0 0 24 24" className="h-5 w-5" aria-hidden="true">
               <path
@@ -64,7 +64,6 @@ export function SiteNav() {
               <circle cx="12" cy="18.5" r="1.8" className="fill-current text-primary-foreground" />
             </svg>
           </span>
-          <span className="truncate text-lg font-extrabold tracking-tight">Nimbari</span>
         </Link>
 
         <nav className="hidden items-center gap-1 lg:flex lg:justify-self-center" aria-label="Sections">
