@@ -169,14 +169,23 @@ function Contact() {
             <p className="mt-2 text-sm text-muted-foreground">
               Prefer a live conversation? Grab a 30-minute discovery slot.
             </p>
-            <div className="mt-4 overflow-hidden rounded-2xl border border-border">
-              <iframe
-                title="Book a discovery call"
-                src="https://cal.com/team/nimbari/discovery?embed=true"
-                className="h-[420px] w-full"
-                loading="lazy"
-              />
+            {/* Replace CAL_BOOKING_URL with your Cal.com / Calendly link to enable the live embed. */}
+            <div className="mt-4 rounded-2xl border border-dashed border-border bg-secondary/50 p-6 text-center">
+              <CalendarDays className="mx-auto h-6 w-6 text-primary" />
+              <p className="mt-3 text-sm text-muted-foreground">
+                Calendar booking widget — connect your Cal.com or Calendly link to embed live
+                availability here.
+              </p>
+              <a
+                href="https://cal.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="mt-4 inline-flex rounded-full border border-border bg-background px-4 py-2 text-sm font-semibold hover:bg-accent"
+              >
+                Open scheduler
+              </a>
             </div>
+
           </div>
         </aside>
       </div>
