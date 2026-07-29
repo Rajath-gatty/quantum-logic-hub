@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Github, Linkedin } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 export function SiteFooter({ onManageCookies }: { onManageCookies?: () => void }) {
   return (
@@ -81,15 +81,10 @@ export function SiteFooter({ onManageCookies }: { onManageCookies?: () => void }
             >
               <Github className="h-4 w-4" />
             </a>
-            <a
-              href="https://x.com"
-              aria-label="X"
-              className="grid h-10 w-10 place-items-center rounded-xl border border-ink-foreground/15 text-sm font-bold hover:border-ink-foreground/40"
-            >
-              X
-            </a>
           </div>
-          <p className="text-sm text-ink-foreground/65">hello@example.com</p>
+          <p className="flex items-center gap-2 text-sm text-ink-foreground/65">
+            <Mail className="h-4 w-4" /> support@rajathgatty.in
+          </p>
         </div>
       </div>
 
