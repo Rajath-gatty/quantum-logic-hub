@@ -110,12 +110,6 @@ function Contact() {
                 "Full Consultancy",
               ]}
             />
-            <SelectField
-              label="Estimated budget"
-              name="budget"
-              error={errors.budget}
-              options={["< $25k", "$25k – $75k", "$75k – $200k", "$200k+"]}
-            />
           </div>
 
           <div className="mt-5">
@@ -153,10 +147,10 @@ function Contact() {
                   support@rajathgatty.in
                 </a>
               </li>
-              <li className="flex gap-3">
+              {/* <li className="flex gap-3">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
                 Remote-first · Amsterdam & Austin
-              </li>
+              </li> */}
               <li className="flex gap-3">
                 <Clock className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
                 We respond within 24 hours
@@ -164,12 +158,11 @@ function Contact() {
             </ul>
           </div>
 
-          <div className="rounded-3xl border border-border p-6">
+          {/* <div className="rounded-3xl border border-border p-6">
             <h2 className="text-base font-bold">Book instantly</h2>
             <p className="mt-2 text-sm text-muted-foreground">
               Prefer a live conversation? Grab a 30-minute discovery slot.
             </p>
-            {/* Replace CAL_BOOKING_URL with your Cal.com / Calendly link to enable the live embed. */}
             <div className="mt-4 rounded-2xl border border-dashed border-border bg-secondary/50 p-6 text-center">
               <CalendarDays className="mx-auto h-6 w-6 text-primary" />
               <p className="mt-3 text-sm text-muted-foreground">
@@ -186,7 +179,7 @@ function Contact() {
               </a>
             </div>
 
-          </div>
+          </div>  */}
         </aside>
       </div>
     </div>
