@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
 
 export function SiteFooter({ onManageCookies }: { onManageCookies?: () => void }) {
   return (
@@ -65,23 +65,7 @@ export function SiteFooter({ onManageCookies }: { onManageCookies?: () => void }
         </div>
 
         <div className="space-y-3">
-          <p className="text-sm font-semibold">Social</p>
-          <div className="flex gap-3">
-            <a
-              href="https://linkedin.com"
-              aria-label="LinkedIn"
-              className="grid h-10 w-10 place-items-center rounded-xl border border-ink-foreground/15 hover:border-ink-foreground/40"
-            >
-              <Linkedin className="h-4 w-4" />
-            </a>
-            <a
-              href="https://github.com"
-              aria-label="GitHub"
-              className="grid h-10 w-10 place-items-center rounded-xl border border-ink-foreground/15 hover:border-ink-foreground/40"
-            >
-              <Github className="h-4 w-4" />
-            </a>
-          </div>
+          <p className="text-sm font-semibold">Contact</p>
           <p className="flex items-center gap-2 text-sm text-ink-foreground/65">
             <Mail className="h-4 w-4" /> support@rajathgatty.in
           </p>
