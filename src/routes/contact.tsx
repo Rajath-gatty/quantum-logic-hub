@@ -153,6 +153,7 @@ function Contact() {
             {loading ? "Sending…" : "Send enquiry"}
           </button>
         </form>
+        )}
 
         <aside className="space-y-5">
           <div className="rounded-3xl border border-border p-6">
