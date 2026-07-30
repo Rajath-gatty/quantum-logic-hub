@@ -7,13 +7,13 @@ import { z } from "zod";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Book a Cloud & AI Discovery Call" },
+      { title: "Contact — Rajath Consultancy Services" },
       {
         name: "description",
         content:
-          "Tell us about your cloud migration, LLM or MLOps project. We reply to every enquiry within 24 hours.",
+          "Tell Rajath Consultancy Services about your cloud migration, LLM or MLOps project. We reply to every enquiry within 24 hours.",
       },
-      { property: "og:title", content: "Contact — Book a Discovery Call" },
+      { property: "og:title", content: "Contact — Rajath Consultancy Services" },
       {
         property: "og:description",
         content: "Share your project details or book time directly with a principal architect.",

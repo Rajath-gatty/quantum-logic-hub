@@ -46,6 +46,7 @@ export function SiteNav() {
               <circle cx="12" cy="18.5" r="1.8" className="fill-current text-primary-foreground" />
             </svg>
           </span>
+          <span className="truncate text-sm font-bold text-foreground">Rajath Consultancy Services</span>
         </Link>
 
         <nav className="hidden items-center gap-1 lg:flex lg:justify-self-center" aria-label="Sections">
