@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import { Mail, MapPin, Clock, Loader2, CalendarDays } from "lucide-react";
+import { Mail, MapPin, Clock, Loader2, CalendarDays, CheckCircle2 } from "lucide-react";
 import { toast } from "sonner";
 import { z } from "zod";
 
@@ -40,7 +40,6 @@ const schema = z.object({
   company: z.string().trim().max(120).optional(),
   role: z.string().trim().max(120).optional(),
   interest: z.string().min(1, "Select a service interest"),
-  budget: z.string().min(1, "Select a budget range"),
   details: z.string().trim().min(20, "Tell us a little more (20+ characters)").max(2000),
 });
 
@@ -49,6 +48,7 @@ type Errors = Partial<Record<keyof z.infer<typeof schema>, string>>;
 function Contact() {
   const [errors, setErrors] = useState<Errors>({});
   const [loading, setLoading] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
 
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -72,6 +72,7 @@ function Contact() {
     await new Promise((r) => setTimeout(r, 900));
     setLoading(false);
     form.reset();
+    setSubmitted(true);
     toast.success("Thanks — we'll reply within 24 hours.");
   };
 
@@ -87,6 +88,22 @@ function Contact() {
       </div>
 
       <div className="mt-14 grid gap-8 lg:grid-cols-[1.5fr_1fr]">
+        {submitted ? (
+          <div className="rounded-3xl border border-border p-8 text-center sm:p-12">
+            <CheckCircle2 className="mx-auto h-12 w-12 text-primary" />
+            <h2 className="mt-5 text-2xl font-bold">Enquiry sent</h2>
+            <p className="mx-auto mt-3 max-w-md text-sm text-muted-foreground">
+              Thanks for reaching out — a principal architect will reply to you within 24 hours.
+            </p>
+            <button
+              type="button"
+              onClick={() => setSubmitted(false)}
+              className="mt-6 inline-flex rounded-full border border-border bg-background px-5 py-2.5 text-sm font-semibold hover:bg-accent"
+            >
+              Send another enquiry
+            </button>
+          </div>
+        ) : (
         <form onSubmit={onSubmit} noValidate className="rounded-3xl border border-border p-6 sm:p-8">
           <div className="grid gap-5 sm:grid-cols-2">
             <Field label="Full name" name="name" error={errors.name} required />
@@ -136,6 +153,7 @@ function Contact() {
             {loading ? "Sending…" : "Send enquiry"}
           </button>
         </form>
+        )}
 
         <aside className="space-y-5">
           <div className="rounded-3xl border border-border p-6">
