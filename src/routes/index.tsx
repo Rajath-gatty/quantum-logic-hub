@@ -11,13 +11,13 @@ import {
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Cloud & AI Consulting for Enterprise Growth" },
+      { title: "Rajath Consultancy Services — Cloud & AI Consulting for Enterprise Growth" },
       {
         name: "description",
         content:
-          "We architect intelligent cloud solutions: migration, LLM deployment, MLOps pipelines and cloud security for enterprise teams.",
+          "Rajath Consultancy Services architects intelligent cloud solutions: migration, LLM deployment, MLOps pipelines and cloud security for enterprise teams.",
       },
-      { property: "og:title", content: "Cloud & AI Consulting for Enterprise Growth" },
+      { property: "og:title", content: "Rajath Consultancy Services — Cloud & AI Consulting for Enterprise Growth" },
       {
         property: "og:description",
         content:
