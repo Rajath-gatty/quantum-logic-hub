@@ -40,7 +40,6 @@ const schema = z.object({
   company: z.string().trim().max(120).optional(),
   role: z.string().trim().max(120).optional(),
   interest: z.string().min(1, "Select a service interest"),
-  budget: z.string().min(1, "Select a budget range"),
   details: z.string().trim().min(20, "Tell us a little more (20+ characters)").max(2000),
 });
 
