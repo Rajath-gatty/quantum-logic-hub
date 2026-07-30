@@ -32,8 +32,21 @@ export function SiteNav() {
           : "border-transparent bg-background/60 backdrop-blur"
       }`}
     >
-      <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-3.5 lg:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] lg:px-8">
-  <span className="truncate text-sm font-bold text-foreground">Rajath Consultancy Services</span>
+        <Link to="/" className="flex min-w-0 items-center gap-2.5" aria-label="Home">
+          <span className="grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-primary">
+            <svg viewBox="0 0 24 24" className="h-5 w-5" aria-hidden="true">
+              <path
+                d="M6 15a4 4 0 0 1 .8-7.9A5.5 5.5 0 0 1 17.5 8 3.5 3.5 0 0 1 18 15H6Z"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.6"
+                className="text-primary-foreground"
+              />
+              <circle cx="12" cy="18.5" r="1.8" className="fill-current text-primary-foreground" />
+            </svg>
+          </span>
+          <span className="truncate text-sm font-bold text-foreground">Rajath Consultancy Services</span>
+        </Link>
 
         <nav className="hidden items-center gap-1 lg:flex lg:justify-self-center" aria-label="Sections">
           {sections.map((s) => (
