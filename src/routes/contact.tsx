@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import { Mail, MapPin, Clock, Loader2, CalendarDays } from "lucide-react";
+import { Mail, MapPin, Clock, Loader2, CalendarDays, CheckCircle2 } from "lucide-react";
 import { toast } from "sonner";
 import { z } from "zod";
 
@@ -48,6 +48,7 @@ type Errors = Partial<Record<keyof z.infer<typeof schema>, string>>;
 function Contact() {
   const [errors, setErrors] = useState<Errors>({});
   const [loading, setLoading] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
 
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -71,6 +72,7 @@ function Contact() {
     await new Promise((r) => setTimeout(r, 900));
     setLoading(false);
     form.reset();
+    setSubmitted(true);
     toast.success("Thanks — we'll reply within 24 hours.");
   };
 
