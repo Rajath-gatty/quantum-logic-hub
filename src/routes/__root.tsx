@@ -81,13 +81,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Cloud & AI Consulting for Enterprise" },
+      { title: "Rajath Consultancy Services — Cloud & AI Consulting for Enterprise" },
       {
         name: "description",
         content:
-          "We architect cloud infrastructure and production AI systems for enterprise teams.",
+          "Rajath Consultancy Services architects cloud infrastructure and production AI systems for enterprise teams.",
       },
-      { property: "og:site_name", content: "Cloud & AI Consulting" },
+      { property: "og:site_name", content: "Rajath Consultancy Services" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -107,7 +107,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          name: "Cloud & AI Consulting",
+          name: "Rajath Consultancy Services",
           description:
             "Cloud architecture, AI/ML integration, MLOps and cloud security consulting for enterprises.",
           email: "support@rajathgatty.in",
