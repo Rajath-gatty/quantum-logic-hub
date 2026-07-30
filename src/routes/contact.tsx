@@ -88,6 +88,22 @@ function Contact() {
       </div>
 
       <div className="mt-14 grid gap-8 lg:grid-cols-[1.5fr_1fr]">
+        {submitted ? (
+          <div className="rounded-3xl border border-border p-8 text-center sm:p-12">
+            <CheckCircle2 className="mx-auto h-12 w-12 text-primary" />
+            <h2 className="mt-5 text-2xl font-bold">Enquiry sent</h2>
+            <p className="mx-auto mt-3 max-w-md text-sm text-muted-foreground">
+              Thanks for reaching out — a principal architect will reply to you within 24 hours.
+            </p>
+            <button
+              type="button"
+              onClick={() => setSubmitted(false)}
+              className="mt-6 inline-flex rounded-full border border-border bg-background px-5 py-2.5 text-sm font-semibold hover:bg-accent"
+            >
+              Send another enquiry
+            </button>
+          </div>
+        ) : (
         <form onSubmit={onSubmit} noValidate className="rounded-3xl border border-border p-6 sm:p-8">
           <div className="grid gap-5 sm:grid-cols-2">
             <Field label="Full name" name="name" error={errors.name} required />
